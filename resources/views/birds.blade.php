@@ -11,9 +11,11 @@
 <h1>Specie di volatili</h1>
 
 <ul>
-    @foreach($bird_breeds as $bird_breed)
+    @forelse($bird_breeds as $bird_breed)
     <li>{{ $bird_breed }}</li>
-    @endforeach
+    @empty
+    <li>Nessuna Specie</li>
+    @endforelse
 </ul>
     
 </body>
