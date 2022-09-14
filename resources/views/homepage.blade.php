@@ -8,11 +8,14 @@
 </head>
 <body>
 
-<h1>Hello world</h1>
-<h2>{{ $name }} {{ $surname }}</h2>
-@foreach($dog_breeds as $dog_breed)
-    <p>{{ $dog_breed }}</p>
-@endforeach
+<h1>Menu</h1>
+
+<ul>
+    <li><a href="{{ url('/dogs')}}">Razze di cani</a></li>
+    <li><a href="{{ url('/cats')}}">Razze di gatti</a></li>
+    <li><a href="{{ url('/fishes')}}">Specie di pesci</a></li>
+    <li><a href="{{ url('/birds')}}">Specie di volatili</a></li>
+</ul>
     
 </body>
 </html>
