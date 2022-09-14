@@ -9,6 +9,7 @@
 <body>
 
 <h1>Hello world</h1>
+<h2>{{ $name }}</h2>
     
 </body>
 </html>
