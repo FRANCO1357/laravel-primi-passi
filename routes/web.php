@@ -15,5 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = ['name' => 'Francesco', 'surname' => 'Melani'];
-    return view('homepage', $data);
+    $dog_breeds = [
+        'Pastore Australiano',
+        'Golden Retriver',
+        'Alano',
+        'Setter',
+    ];
+    return view('homepage', $data, compact('dog_breeds'));
 }); 

@@ -10,6 +10,9 @@
 
 <h1>Hello world</h1>
 <h2>{{ $name }} {{ $surname }}</h2>
+@foreach($dog_breeds as $dog_breed)
+    <p>{{ $dog_breed }}</p>
+@endforeach
     
 </body>
 </html>
